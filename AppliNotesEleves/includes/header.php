@@ -7,7 +7,7 @@
 </head>
 <nav>
 <?php 
-if(isset($_SESSION['idTypeUtilisateur'])){
+if(isset($_SESSION)){
 echo '<a href = "index.php?uc=decnx" id = "bt_deco"><input type = "button" value = "Deconnexion" ></a>';
 echo '<div style = "clear : both"></div>';
 }
