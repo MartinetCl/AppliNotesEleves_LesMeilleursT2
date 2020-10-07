@@ -14,22 +14,19 @@ echo '<div style = "clear : both"></div>';
 ?>
 <ul id= "menu">
 <?php 
-if (isset($_REQUEST['uc']))
+if (isset($_SESSION['idConnexion']))
 {	
-	if ($_REQUEST['uc'] == '')
-	{
-		';
-	}
-	else if ($_REQUEST['uc'] == '')
-	{
-		';
-	}
-	else if ($_REQUEST['uc'] == '')
-	{
-		';
-	}
+	
 }
 ?>
+
+<ul id="menu">
+<li id="vide"></li>' 
+<li id="menu_link_first"><a href="index.php?uc=saisieNote">Nouvelle Note</a></li>
+<li id="menu_link_first"><a href="index.php?uc=AffichageBulletin">Afficher bulletin</a></li>
+</ul>
+
+
 </ul>
 </nav>
 <body>
