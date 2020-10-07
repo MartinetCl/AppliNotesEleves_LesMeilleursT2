@@ -5,17 +5,21 @@
 	<thead>
 		<tr>
 			<th>Matière</th>
-			<th>Notes</th> 
+			<th>Moyenne</th>
+			<th colspan = "5">Notes</th> 
 		</tr>
 	</thead>
 	<tbody>
 	<?php
 	foreach ($lesMatières as $matière) {
+		$moyenne = getMoyenneMatière(matière);
 		echo '<tr>'
-			. '<td>' . $matière[''] . '</td>';
+			. '<td>' . $matière['libelleMat'] . '</td>';
+			. '<td>' . $moyenne. '</td>';
+			$lesNotes = getLesNotes($matière['code']);
 			foreach ($lesNotes as $notes){
 				echo '<tr>'
-				. '<td>' . $notes[''] . '/' .  $notes[''] . '</td>';
+				. '<td>' . $notes['noteNumerateur'] . '/' .  $notes['noteDenominateur'] . '(' . $notes['coeffNote'] .')</td>';
 			}
 		. '</tr>';	
 	}

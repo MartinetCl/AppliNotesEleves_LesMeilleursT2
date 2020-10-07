@@ -9,18 +9,8 @@ if (isset($_REQUEST['action']))
 			$mdp = $_REQUEST['mdp'];
 			$result= connect($login, $mdp) ;
 			if ($result)    
-			{
-				if ($_SESSION['idTypeUtilisateur']== 0)
-				{
-					header ("Location:index.php?uc=production") ; 
-				}
-				else if($_SESSION['idTypeUtilisateur']== 1)
-				{
-					header ("Location:index.php?uc=magasin") ; 
-				}
-				else{
-					header ("Location:index.php?uc=visite") ; 
-				}
+			{	
+			header ("Location:index.php?uc=saisieNote") ; 	
 			}
 			else 
 			{
