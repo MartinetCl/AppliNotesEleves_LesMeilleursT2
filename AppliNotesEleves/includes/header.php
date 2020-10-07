@@ -7,13 +7,6 @@
 </head>
 <nav>
 <?php 
-if(isset($_SESSION)){
-echo '<a href = "index.php?uc=decnx" id = "bt_deco"><input type = "button" value = "Deconnexion" ></a>';
-echo '<div style = "clear : both"></div>';
-}
-?>
-<ul id= "menu">
-<?php 
 if (isset($_SESSION['idConnexion']))
 {	
 	
@@ -21,9 +14,10 @@ if (isset($_SESSION['idConnexion']))
 ?>
 
 <ul id="menu">
-<li id="vide"></li>' 
+<li id="vide"></li>
 <li id="menu_link_first"><a href="index.php?uc=saisieNote">Nouvelle Note</a></li>
 <li id="menu_link_first"><a href="index.php?uc=AffichageBulletin">Afficher bulletin</a></li>
+<li id="menu_link_first"><a href="index.php?uc=index.php?uc=decnx">Deconnexion</a></li>
 </ul>
 
 

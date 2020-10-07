@@ -1,6 +1,6 @@
 <?php
 if (!isset($_REQUEST['action']))
-	$action = "consultLotMedicament" ;
+	$action = "SaisieNote" ;
 else
 	$action = $_REQUEST['action'] ;
 	
@@ -10,6 +10,12 @@ switch ($action)
         echo "veuillez saisir une note";
             break ;}  
     case "ValidationNote" : {
+        //$noute = $_REQUEST['note'];
+        //$coefficient = $_REQUEST['coefficient'];
+        //$matiere = $_REQUEST['coefficient'];
+        //$trimestre = $_REQUEST['trimestre'];
+        //$année = $_REQUEST['année'];
+
         echo "Bravo vous avez saisie une note";
             break ;}  
  
