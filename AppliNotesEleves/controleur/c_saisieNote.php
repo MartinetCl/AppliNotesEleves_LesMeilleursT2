@@ -10,7 +10,8 @@ switch ($action)
         echo "veuillez saisir une note";
             break ;}  
     case "ValidationNote" : {
-        //$noute = $_REQUEST['note'];
+        //$nouteNumera = $_REQUEST['noteNumera'];
+        //$nouteDenomi = $_REQUEST['noteDenomi'];
         //$coefficient = $_REQUEST['coefficient'];
         //$matiere = $_REQUEST['coefficient'];
         //$trimestre = $_REQUEST['trimestre'];
