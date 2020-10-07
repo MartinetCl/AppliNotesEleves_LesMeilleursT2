@@ -10,9 +10,9 @@ nav{
 	max-height : 100px;
 }
 #bt_deco{
-	display : block;
-	text-align : center;
-	margin: -5% 2% 0 auto;
+	float : right;
+	margin-right : 2%;
+	margin-top : 2%;
 }
 
 a{
