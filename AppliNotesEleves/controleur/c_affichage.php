@@ -9,7 +9,7 @@ switch ($action)
 		case "détail" : {
 			$leTrimestre = getTrimestre();
 			$lesMatières = getLesMatieres();
-			$nbNotes = getNbNotes();
+			$moyenneGlo = getMoyenneGlobale($_SESSION['idConnexion']);
 			include "v_détail.php";
 			break;
 		}

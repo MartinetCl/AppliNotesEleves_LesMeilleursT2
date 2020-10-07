@@ -11,18 +11,19 @@
 	</thead>
 	<tbody>
 	<?php
+	echo '<tr>';
 	foreach ($lesMatières as $matière) {
 		$moyenne = getMoyenneMatière(matière);
-		echo '<tr>'
-			. '<td>' . $matière['libelleMat'] . '</td>';
+		echo '<td>' . $matière['libelleMat'] . '</td>'
 			. '<td>' . $moyenne. '</td>';
 			$lesNotes = getLesNotes($matière['code']);
 			foreach ($lesNotes as $notes){
 				echo '<tr>'
 				. '<td>' . $notes['noteNumerateur'] . '/' .  $notes['noteDenominateur'] . '(' . $notes['coeffNote'] .')</td>';
-			}
-		. '</tr>';	
+			}	
 	}
+	echo '<td></td><td>' . $moyenneGlo . '</td>'
+	. '</tr>';
 	?>
 	</tbody>
 </table>
