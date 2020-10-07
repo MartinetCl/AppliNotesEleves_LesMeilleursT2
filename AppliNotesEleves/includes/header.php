@@ -7,7 +7,7 @@
 </head>
 <nav>
 <?php 
-if(isset($_SESSION['idTypeUtilisateur'])){
+if(isset($_SESSION)){
 echo '<a href = "index.php?uc=decnx" id = "bt_deco"><input type = "button" value = "Deconnexion" ></a>';
 echo '<div style = "clear : both"></div>';
 }
@@ -16,21 +16,10 @@ echo '<div style = "clear : both"></div>';
 <?php 
 if (isset($_REQUEST['uc']))
 {	
-	if ($_REQUEST['uc'] == '')
-	{
-		echo '
-		';
-	}
-	else if ($_REQUEST['uc'] == '')
-	{
-		echo '
-		';
-	}
-	else if ($_REQUEST['uc'] == '')
-	{
-		echo '
-		';
-	}
+	echo '
+	<li><a href = "index.php?uc=saisie">Saisie des notes</a></li>
+	<li><a href = "index.php?uc=consulter">Consulter les notes</a></li>
+	';
 }
 ?>
 </ul>

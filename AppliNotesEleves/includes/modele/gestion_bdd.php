@@ -8,8 +8,6 @@ function connect($id, $mdp){
 	$exec=$bdd->prepare($sql);
     $exec->execute();
 	$curseur=$exec->fetch();
-	$_SESSION['idTypeUtilisateur']=$curseur['idTypeUtilisateur'] ;
-	$_SESSION['idUtilisateur'] = $curseur['idUtilisateur'];
 	return $curseur;
 }
 
