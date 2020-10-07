@@ -6,13 +6,15 @@ else
 	
 switch ($action)
 	{
-	case "SelectionTrimestre" : {
-        echo "veuillez saisir un trimestre";
-            break ;}  
-    case "AffichageBulletin" : {
-        echo "Bravo voiçi vos notes";
-            break ;}  
- 
+		case "détail" : {
+			$notes = getLesNotes();
+			$trimestre = getTrimestre();
+			$matière = getLesMatieres();
+		}
+		case "moyenne" : {
+			$notes = getLesNotes();
+			$matière = getLesMatieres();
+		}
 	}
 	
 ?>
