@@ -9,7 +9,7 @@
 <?php 
 if (isset($_SESSION['idConnexion']))
 {	
-	
+	echo "test";
 }
 ?>
 
