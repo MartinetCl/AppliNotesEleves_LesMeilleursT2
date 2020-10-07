@@ -18,14 +18,17 @@ if (isset($_REQUEST['uc']))
 {	
 	if ($_REQUEST['uc'] == '')
 	{
+		echo '
 		';
 	}
 	else if ($_REQUEST['uc'] == '')
 	{
+		echo '
 		';
 	}
 	else if ($_REQUEST['uc'] == '')
 	{
+		echo '
 		';
 	}
 }
