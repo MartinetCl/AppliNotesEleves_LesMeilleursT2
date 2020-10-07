@@ -7,13 +7,11 @@ else
 switch ($action)
 	{
 		case "détail" : {
-			$notes = getLesNotes();
-			$trimestre = getTrimestre();
-			$matière = getLesMatieres();
-		}
-		case "moyenne" : {
-			$notes = getLesNotes();
-			$matière = getLesMatieres();
+			$leTrimestre = getTrimestre();
+			$lesMatières = getLesMatieres();
+			$nbNotes = getNbNotes();
+			include "v_détail.php";
+			break;
 		}
 	}
 	
