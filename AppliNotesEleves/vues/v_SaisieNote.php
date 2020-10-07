@@ -1,4 +1,15 @@
+<h2>Veuillez saisir une note</h2>
+
 <form>
+
+	Numerateur de la note : <br>
+	Denominateur de la note : <br>
+	Coefficient de la note : <br>
+	La matiere : <br>
+	La trimestre : <br>
+	L'année : <br>
+
+
 	<input type="number" name="noteNumera">
 	<input type="number" name="noteDenomi">
 	<input type="number" name="coefficient">

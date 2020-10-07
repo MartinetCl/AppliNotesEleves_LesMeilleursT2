@@ -7,15 +7,15 @@ else
 switch ($action)
 	{
 	case "SaisieNote" : {
-        echo "veuillez saisir une note";
+        require "vues/v_SaisieNote.php";
             break ;}  
     case "ValidationNote" : {
         //$nouteNumera = $_REQUEST['noteNumera'];
         //$nouteDenomi = $_REQUEST['noteDenomi'];
         //$coefficient = $_REQUEST['coefficient'];
-        //$matiere = $_REQUEST['coefficient'];
+        //$matiere = $_REQUEST['matiere'];
         //$trimestre = $_REQUEST['trimestre'];
-        //$année = $_REQUEST['année'];
+        //$année = $_REQUEST['annee'];
 
         echo "Bravo vous avez saisie une note";
             break ;}  
