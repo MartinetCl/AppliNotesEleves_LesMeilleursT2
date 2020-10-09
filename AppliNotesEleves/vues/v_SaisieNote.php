@@ -2,7 +2,7 @@
 <h2>Veuillez saisir une note</h2>
 </center>
 
-<form>
+<form method="POST" action="index.php?uc=saisieNote&action=ValidationNote">
 	<div class = gigaBoite>
 	<div class = boiteLabel>
 	Numerateur de la note : <br>

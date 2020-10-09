@@ -14,17 +14,14 @@ switch ($action)
             break ;}  
     case "ValidationNote" : {
         $nouteNumera = $_REQUEST['noteNumera'];
-        echo $nouteNumera;
         $nouteDenomi = $_REQUEST['noteDenomi'];
-        echo $nouteDenomi;
         $coefficient = $_REQUEST['coefficient'];
-        echo $coefficient;
         $matiere = $_REQUEST['matiere'];
-        echo $matiere;
         $trimestre = $_REQUEST['trimestre'];
-        echo $trimestre;
-        $année = $_REQUEST['annee'];
-        echo $année;
+        $annee = $_REQUEST['annee'];
+        $user = $_SESSION['idConnexion'];
+
+        rajouterNote($matiere,$nouteNumera,$nouteDenomi,$coefficient,$trimestre,$annee,$idConnexion);
         echo "Bravo vous avez saisie une note";
 
             break ;}  

@@ -47,7 +47,6 @@ function getLesMatieres(){
     $curseur=$exec->fetchall();
     return $curseur;
 }
-
 function getMoyenneGlobale($idUtilisateur){
 	require "connexion.php";
 	$sql = " ";
@@ -56,6 +55,18 @@ function getMoyenneGlobale($idUtilisateur){
     $curseur=$exec->fetchall();
     return $curseur;
 }
+
+function rajouterNote($codeMat,$noteNumerateur,$noteDenominateur,$coeffNote,$trimestre,$annee,$idUtilisateur){
+	require "connexion.php";
+	$sql = 'select max(idNote)+1 FROM ecooldirect_note where ecooldirect_note.codeMatNote ="'.$codeMat.'"';
+	$exec=$bdd->prepare($sql);
+    $exec->execute();
+    $curseur=$exec->fetchall();
+    echo $curseur;
+    //return $curseur;
+    }
+
+
 ?>
 
 
