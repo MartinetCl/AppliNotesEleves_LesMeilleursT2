@@ -1,10 +1,10 @@
 <?php
 
-$PARAM_hote='stadjutodmbd01.mysql.db'; // le chemin vers le serveur
+$PARAM_hote='localhost'; // le chemin vers le serveur
 $PARAM_port='';
 $PARAM_nom_bd='stadjutodmbd01'; // le nom de votre base de données
-$PARAM_utilisateur='stadjutodmbd01'; // nom d'utilisateur pour se connecter
-$PARAM_mot_passe='cartApus01'; // mot de passe de l'utilisateur pour se connecter
+$PARAM_utilisateur='root'; // nom d'utilisateur pour se connecter
+$PARAM_mot_passe=''; // mot de passe de l'utilisateur pour se connecter
 
 try
 {
