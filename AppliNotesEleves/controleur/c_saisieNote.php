@@ -7,6 +7,7 @@ else
 switch ($action)
 	{
 	case "SaisieNote" : {
+        
         require "vues/v_SaisieNote.php";
             break ;}  
     case "ValidationNote" : {
