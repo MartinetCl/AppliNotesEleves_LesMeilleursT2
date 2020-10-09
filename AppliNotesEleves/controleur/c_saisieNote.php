@@ -13,14 +13,20 @@ switch ($action)
         require "vues/v_SaisieNote.php";
             break ;}  
     case "ValidationNote" : {
-        //$nouteNumera = $_REQUEST['noteNumera'];
-        //$nouteDenomi = $_REQUEST['noteDenomi'];
-        //$coefficient = $_REQUEST['coefficient'];
-        //$matiere = $_REQUEST['matiere'];
-        //$trimestre = $_REQUEST['trimestre'];
-        //$année = $_REQUEST['annee'];
-
+        $nouteNumera = $_REQUEST['noteNumera'];
+        echo $nouteNumera;
+        $nouteDenomi = $_REQUEST['noteDenomi'];
+        echo $nouteDenomi;
+        $coefficient = $_REQUEST['coefficient'];
+        echo $coefficient;
+        $matiere = $_REQUEST['matiere'];
+        echo $matiere;
+        $trimestre = $_REQUEST['trimestre'];
+        echo $trimestre;
+        $année = $_REQUEST['annee'];
+        echo $année;
         echo "Bravo vous avez saisie une note";
+
             break ;}  
  
 	}

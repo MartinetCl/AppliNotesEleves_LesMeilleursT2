@@ -214,7 +214,9 @@ tbody{
 
 .gigaBoite {
 	display: flex;
+	width:  450px;
+	margin:auto;
 }
-.boite {
-	background-color: red;
+.boiteLabel {
+	margin-right: 15px;
 }

@@ -1,8 +1,10 @@
+<center>
 <h2>Veuillez saisir une note</h2>
+</center>
 
 <form>
 	<div class = gigaBoite>
-	<div class = boite>
+	<div class = boiteLabel>
 	Numerateur de la note : <br>
 	Denominateur de la note : <br>
 	Coefficient de la note : <br>
@@ -11,9 +13,9 @@
 	L'année : <br>
 </div>
 	<div class = boite>
-	<input type="number" name="noteNumera">
-	<input type="number" name="noteDenomi">
-	<input type="number" name="coefficient">
+	<input type="number" name="noteNumera"> <br>
+	<input type="number" name="noteDenomi"><br>
+	<input type="number" name="coefficient"><br>
 
 	<select name = "matiere">
 	<?php 
@@ -22,7 +24,7 @@
 	}
  	?>
 	
-	</select>
+	</select><br>
 
 
 	<select name = "trimestre">
@@ -32,7 +34,7 @@
 	}
  	?>
 	
-	</select>
+	</select><br>
 	
 
 	<input type="number" name="annee">
