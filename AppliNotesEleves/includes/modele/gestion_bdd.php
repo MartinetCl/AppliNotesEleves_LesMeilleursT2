@@ -33,11 +33,7 @@ function getLesNotes($matiere){
 
 function getTrimestre(){
 	require "connexion.php";
-<<<<<<< Updated upstream
-	$sql = "SELECT * FROM ecooldirect_trimestre ";
-=======
 	$sql = "select * from EcoolDirect_Trimestre ";
->>>>>>> Stashed changes
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();
@@ -46,11 +42,7 @@ function getTrimestre(){
 
 function getLesMatieres(){
 	require "connexion.php";
-<<<<<<< Updated upstream
-	$sql = " SELECT * FROM ecooldirect_matiere";
-=======
-	$sql = " select * from EcoolDirect_Matiere";
->>>>>>> Stashed changes
+	$sql = " SELECT * FROM EcoolDirect_Matiere";
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();
