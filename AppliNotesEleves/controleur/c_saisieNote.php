@@ -7,7 +7,9 @@ else
 switch ($action)
 	{
 	case "SaisieNote" : {
-        
+        $lesTrimestre = getTrimestre();
+        echo $lesTrimestre[0][0];
+        echo "test";
         require "vues/v_SaisieNote.php";
             break ;}  
     case "ValidationNote" : {
