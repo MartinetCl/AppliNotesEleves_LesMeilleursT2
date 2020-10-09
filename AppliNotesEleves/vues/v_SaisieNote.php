@@ -38,6 +38,8 @@
 	
 
 	<input type="number" name="annee">
+	<br> <br>
+	<input type="submit" name="valider" value="Valider">
 	</div>
 </div>
 
