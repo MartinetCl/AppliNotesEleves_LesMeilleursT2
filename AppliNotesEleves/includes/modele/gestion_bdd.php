@@ -61,7 +61,7 @@ function getMoyenneGlobale($idUtilisateur){
 
 function rajouterNote($codeMat,$noteNumerateur,$noteDenominateur,$coeffNote,$trimestre,$annee,$idUtilisateur){
 	require "connexion.php";
-	$sql = 'select max(idNote)+1 FROM ecooldirect_note where ecooldirect_note.codeMatNote ="'.$codeMat.'"';
+	$sql = 'select max(idNote)+1 FROM EcoolDirect_Note where EcoolDirect_Note.codeMatNote ="'.$codeMat.'"';
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();
