@@ -32,7 +32,7 @@ function getLesNotes($matiere){
 
 function getTrimestre(){
 	require "connexion.php";
-	$sql = "select * from EcoolDirecte_Trimestre ";
+	$sql = "SELECT * FROM ecooldirect_trimestre ";
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();
@@ -41,7 +41,7 @@ function getTrimestre(){
 
 function getLesMatieres(){
 	require "connexion.php";
-	$sql = " select * from EcoolDirecte_Matiere";
+	$sql = " SELECT * FROM ecooldirect_matiere";
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();
