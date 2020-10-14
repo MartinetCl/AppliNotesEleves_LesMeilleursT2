@@ -10,7 +10,7 @@
 	<div class = boite>
 	<input type="number" placeholder="Numéro de la note "name="noteNumera"> <br>
 	<input type="number" placeholder="demonitaeur de la note " name="noteDenomi"><br>
-	<input type="number" placeholder="coefficient " name="coefficient"><br>
+	<input type="text" placeholder="coefficient " name="coefficient" pattern="[0-9]{0,2}.[0-9]{0,2}"><br>
 
 	<select name = "matiere">
 	<?php 
