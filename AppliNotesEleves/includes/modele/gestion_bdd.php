@@ -14,11 +14,14 @@ function connect($id, $mdp){
 
 function getMoyenneMatiere($matiere){
 	require "connexion.php";
-	$sql = "";
+	$sql = "select round((sum(noteNumerateur * 20 / noteDenominateur * coeffNote))/(sum(coeffNote)), 2)as moyenne
+			from EcoolDirect_Note
+			where idUtiNote = " . $_SESSION['idConnexion'] . " 
+			and codeMatNote = '" . $matiere . "'";
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetch();
-    return $curseur;
+    return $curseur[moyenne];
 }
 
 function getLesNotes($matiere){
@@ -40,6 +43,15 @@ function getTrimestre(){
     return $curseur;
 }
 
+function getAnnee(){
+	require "connexion.php";
+	$sql = "select * from EcoolDirect_Annee ";
+	$exec=$bdd->prepare($sql);
+    $exec->execute();
+    $curseur=$exec->fetchall();
+    return $curseur;
+}
+
 function getLesMatieres(){
 	require "connexion.php";
 	$sql = " SELECT * FROM EcoolDirect_Matiere";
@@ -50,13 +62,13 @@ function getLesMatieres(){
 }
 function getMoyenneGlobale($idUtilisateur){
 	require "connexion.php";
-	$sql = "select(sum(noteNumerateur * 20 / noteDenominateur * coeffNote))/(sum(coeffNote))as moyenne
+	$sql = "select round((sum(noteNumerateur * 20 / noteDenominateur * coeffNote))/(sum(coeffNote)), 2)as moyenne
 			from EcoolDirect_Note
 			where idUtiNote = " . $idUtilisateur ;
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetch();
-    return $curseur;
+    return $curseur[moyenne];
 }
 
 function rajouterNote($codeMat,$noteNumerateur,$noteDenominateur,$coeffNote,$trimestre,$annee,$idUtilisateur){
