@@ -9,9 +9,11 @@ switch ($action)
 		case "détail" : {
 			$leTrimestre = getTrimestre();
 			$lAnnee = getAnnee();
-			$lesMatières = getLesMatieres();
-			$moyenneGlo = getMoyenneGlobale($_SESSION['idConnexion']);
 			include  "vues/v_selection_note.php";
+			$leTrimestre = $_REQUEST['trimestre'];
+			$lAnnee = $_REQUEST['annee'];
+			$lesMatières = getLesMatieres();
+			$moyenneGlo = getMoyenneGlobale($_SESSION['idConnexion'], $leTrimestre, $lAnnee);
 			include "vues/v_détail.php";
 			break;
 		}
