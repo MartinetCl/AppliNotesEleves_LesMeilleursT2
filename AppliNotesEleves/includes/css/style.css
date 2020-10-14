@@ -191,8 +191,7 @@ tbody{
 
 .form_input:focus
 {
-	box-shadow: 0 0 10px 0 #0a437c;
-	color : black ; 
+    box-shadow: 0 0 10px 0 #0a437c;
 }
 .connexion-form-btn
 {
@@ -220,7 +219,7 @@ tbody{
     width: 25%;
 	border: 0;
 	padding: 12px 50px;
-    background: #1e79a4;
+    background: #08335f;
     color:#fff;
     
 	
@@ -241,19 +240,14 @@ tbody{
     margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
-	margin-top: 20px;
 }
 
-.gigaBoite input:focus
-{
-    box-shadow: 0 0 10px 0 #020f1b;
-}
+
 .gigaBoite .button input 
 {
 	color: white;
-	background-color: #08335f;
+	background-color: #0e59a5;
 	cursor: pointer;
-	
 }
 
 .gigaBoite .button input:hover 
@@ -261,35 +255,5 @@ tbody{
 	color: grey;
 	background-color:#ffffff;
 	cursor: pointer;
-}
-
-.cb{
-	resize:none;
-	height : 60px;
-	display : inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    margin:2px 0;
-    border :0;
-    background: white;
-    padding: 10px 20px;
-    outline : none;
-    color: rgb(19, 18, 18);
-    transition : 0.5s;
-    margin-left: auto;
-	margin-right: auto;
-	border-radius: 20px;
-	border-style : inset;
-	margin-top: 20px;
-}
-
-h2{
-	box-shadow: black;
-}
-select
-{
-	border-color: white;
-	height: 100%;
-	width: 100%;
 }
 /*c*/
