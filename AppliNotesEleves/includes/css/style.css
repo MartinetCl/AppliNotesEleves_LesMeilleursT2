@@ -245,7 +245,7 @@ tbody{
 
 .gigaBoite input:focus
 {
-    box-shadow: 0 0 10px 0 #020f1b;
+    box-shadow: 0 0 10px 0 #ffffff;
 }
 .gigaBoite .button input 
 {
@@ -277,10 +277,16 @@ tbody{
     margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
-	
+	border-style : inset;
 }
 
 h2{
 	box-shadow: black;
+}
+select
+{
+	border-color: white;
+	height: 100%;
+	width: 100%;
 }
 /*c*/
