@@ -9,7 +9,6 @@ switch ($action)
 	case "SaisieNote" : {
         $lesMatiere = getLesMatieres();
         $lestrimestre = getTrimestre();
-        $lesAnnees = getAnnee();
 
         require "vues/v_SaisieNote.php";
             break ;}  
@@ -23,7 +22,7 @@ switch ($action)
         $user = $_SESSION['idConnexion'];
 
         rajouterNote($matiere,$nouteNumera,$nouteDenomi,$coefficient,$trimestre,$annee,$user);
-        echo "<center><br><h1>Bravo vous avez saisie une note</h1></center>";
+        echo "Bravo vous avez saisie une note";
 
             break ;}  
  
