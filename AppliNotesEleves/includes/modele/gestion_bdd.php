@@ -79,7 +79,7 @@ function rajouterNote($codeMat,$noteNumerateur,$noteDenominateur,$coeffNote,$tri
     $curseur=$exec->fetchall();
     $idnote = $curseur[0][0];
     
-    $sql = 'insert into ecooldirect_note VALUES ('.$idNote.',"'.$codeMat.'",'.$noteNumerateur.','.$noteDenominateur.','.$coeffNote.','.$trimestre.','.$annee.','.$idUtilisateur.')';
+    $sql = 'insert into ecooldirect_note VALUES ('.$idnote.',"'.$codeMat.'",'.$noteNumerateur.','.$noteDenominateur.','.$coeffNote.','.$trimestre.','.$annee.','.$idUtilisateur.')';
 	$exec=$bdd->prepare($sql);
     $exec->execute();
     $curseur=$exec->fetchall();

@@ -23,7 +23,7 @@ switch ($action)
         $user = $_SESSION['idConnexion'];
 
         rajouterNote($matiere,$nouteNumera,$nouteDenomi,$coefficient,$trimestre,$annee,$user);
-        echo "Bravo vous avez saisie une note";
+        echo "<center><br><h1>Bravo vous avez saisie une note</h1></center>";
 
             break ;}  
  
