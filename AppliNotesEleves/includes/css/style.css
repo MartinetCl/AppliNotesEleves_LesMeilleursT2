@@ -211,7 +211,7 @@ tbody{
 .connexion-form-btn:hover{
     background: #2980b9;
 }
-
+/*note*/
 .gigaBoite {
 	margin-left: auto;
     margin-right: auto;
@@ -256,3 +256,4 @@ tbody{
 	background-color:#ffffff;
 	cursor: pointer;
 }
+/*c*/
