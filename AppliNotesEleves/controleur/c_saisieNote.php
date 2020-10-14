@@ -9,6 +9,7 @@ switch ($action)
 	case "SaisieNote" : {
         $lesMatiere = getLesMatieres();
         $lestrimestre = getTrimestre();
+        $lesAnnees = getAnnee();
 
         require "vues/v_SaisieNote.php";
             break ;}  

@@ -4,9 +4,6 @@
 
 <form method="POST" action="index.php?uc=saisieNote&action=ValidationNote">
 	<div class = gigaBoite>
-	<div class = boiteLabel>
-	
-</div>
 	<div class = boite>
 	<input type="number" placeholder="Numéro de la note "name="noteNumera"> <br>
 	<input type="number" placeholder="demonitaeur de la note " name="noteDenomi"><br>
@@ -32,7 +29,11 @@
 	</select><br>
 	
 
-	<input type="number" placeholder="année" name="annee">
+	<?php 
+	foreach ($lesAnnees as $leTrimestre) {
+	echo '<option value ='.$leTrimestre['idAnnee'].'>'.$leTrimestre['libelleAnnee'].'</option>' ;
+	}
+ 	?>
 	<br> <br>
 	<div class="button"><input type="submit" name="valider" value="Valider"></div>
 	</div>
