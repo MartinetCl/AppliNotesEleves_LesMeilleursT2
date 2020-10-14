@@ -5,17 +5,12 @@
 <form method="POST" action="index.php?uc=saisieNote&action=ValidationNote">
 	<div class = gigaBoite>
 	<div class = boiteLabel>
-	Numerateur de la note : <br>
-	Denominateur de la note : <br>
-	Coefficient de la note : <br>
-	La matiere : <br>
-	La trimestre : <br>
-	L'année : <br>
+	
 </div>
 	<div class = boite>
-	<input type="number" name="noteNumera"> <br>
-	<input type="number" name="noteDenomi"><br>
-	<input type="number" name="coefficient"><br>
+	<input type="number" placeholder="Numéro de la note "name="noteNumera"> <br>
+	<input type="number" placeholder="demonitaeur de la note " name="noteDenomi"><br>
+	<input type="number" placeholder="coefficient " name="coefficient"><br>
 
 	<select name = "matiere">
 	<?php 
@@ -37,9 +32,9 @@
 	</select><br>
 	
 
-	<input type="number" name="annee">
+	<input type="number" placeholder="année" name="annee">
 	<br> <br>
-	<input type="submit" name="valider" value="Valider">
+	<div class="button"><input type="submit" name="valider" value="Valider"></div>
 	</div>
 </div>
 

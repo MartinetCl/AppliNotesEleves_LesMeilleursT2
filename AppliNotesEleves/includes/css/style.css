@@ -241,3 +241,18 @@ tbody{
 	margin-right: auto;
 	border-radius: 20px;
 }
+
+
+.gigaBoite .button input 
+{
+	color: white;
+	background-color: #0e59a5;
+	cursor: pointer;
+}
+
+.gigaBoite .button input:hover 
+{
+	color: grey;
+	background-color:#ffffff;
+	cursor: pointer;
+}
