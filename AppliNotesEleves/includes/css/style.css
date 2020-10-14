@@ -213,10 +213,31 @@ tbody{
 }
 
 .gigaBoite {
-	display: flex;
-	width:  450px;
-	margin:auto;
+	margin-left: auto;
+    margin-right: auto;
+	border-radius: 20px;
+    width: 25%;
+	border: 0;
+	padding: 12px 50px;
+    background: #08335f;
+    color:#fff;
+    
+	
 }
-.boiteLabel {
-	margin-right: 15px;
+.gigaBoite input {
+	resize:none;
+	height : 60px;
+	display : inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin:2px 0;
+    border :0;
+    background: white;
+    padding: 10px 20px;
+    outline : none;
+    color: rgb(19, 18, 18);
+    transition : 0.5s;
+    margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
 }
