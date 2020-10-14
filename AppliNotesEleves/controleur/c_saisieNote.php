@@ -21,7 +21,7 @@ switch ($action)
         $annee = $_REQUEST['annee'];
         $user = $_SESSION['idConnexion'];
 
-        rajouterNote($matiere,$nouteNumera,$nouteDenomi,$coefficient,$trimestre,$annee,$idConnexion);
+        rajouterNote($matiere,$nouteNumera,$nouteDenomi,$coefficient,$trimestre,$annee,$user);
         echo "Bravo vous avez saisie une note";
 
             break ;}  
