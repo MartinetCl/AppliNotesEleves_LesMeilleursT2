@@ -12,10 +12,10 @@
 	<tbody>
 	<?php
 	foreach ($lesMatières as $matière) {
+		$moyenne = getMoyenneMatiere($matière['codeMat']);
 		echo '<tr>';
-		$moyenne = getMoyenneMatiere(matière);
 		echo '<td>' . $matière['libelleMat'] . '</td>'
-			. '<td>' . $moyenne. '</td>';
+			. '<td>' . $moyenne . '</td>';
 			$lesNotes = getLesNotes($matière['codeMat']);
 			echo '<td colspan = "5">';
 			foreach ($lesNotes as $notes){
@@ -28,7 +28,7 @@
 	</tbody>
 	<thead>
 		<tr>
-			<?php echo '<th>Moyenne globale</td><td>' . $moyenneGlo . '</th>'; ?>
+			<?php echo '<th>Moyenne globale</th><th>' . $moyenneGlo . '</th>'; ?>
 		</tr>
 	</thead>
 </table>
