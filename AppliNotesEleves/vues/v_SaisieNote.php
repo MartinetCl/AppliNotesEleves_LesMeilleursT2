@@ -28,8 +28,13 @@
 	
 	</select></div><br>
 	
-
-	<input type="number" placeholder="année" name="annee">
+	<div class = "cb"><select name = "annee" > 
+	<?php 
+	foreach ($lesAnnees as $leTrimestre) {
+	echo '<option value ='.$leTrimestre['idAnnee'].'>'.$leTrimestre['libelleAnnee'].'</option>' ;
+	}
+ 	?>
+ 	</select></div>
 	<br> <br>
 	<div class="button"><input type="submit" name="valider" value="Valider"></div>
 	</div>
